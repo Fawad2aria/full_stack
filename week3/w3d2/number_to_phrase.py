@@ -36,29 +36,29 @@ tens = {
     9: 'ninty'
 }
 
-def number_pharse(number_input):
+def number_phrase(number_input):
     if number_input == 0: return 'zero'
+    elif number_input >= 10 and number_input <= 19:
+        return teens[number_input]
     a = number_input//100
     c = number_input % 10
     b = (number_input % 100)//10
-    if number_input >= 10 and number_input <= 19:
-        print(tens[number_input])
     x = ''
     y = ''   
     if b == 0 and c == 0:
-        x= ones[a] + " yundred "     
+        x = ones[a] + " hundred "     
     elif b != 0:        
-        x= ones[a] + "yundred and " 
+        x = ones[a] + "hundred and " 
     if b <= 1: 
         y = ones[number_input%100]
         
     elif b > 1: 
-        y = tens[b] + ones[c] 
+        y = tens[b] + ones[c]
     xy = x + y 
     return xy
 def main():
 
     while True:
         number_input = int(input('Enter your number to turn to English word: '))
-        print(number_pharse(number_input))
+        print(number_phrase(number_input))
 main()
