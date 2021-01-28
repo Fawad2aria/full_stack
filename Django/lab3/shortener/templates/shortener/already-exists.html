@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{{title}}</title>
+    <style>
+
+    .hero {
+      width: 800px;
+      margin: 0 auto;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="hero">
+    <h1>Url Shortener/ Already exist</h1>
+    <ul>
+    
+    <li>
+      {{ object.url }}
+          
+      &nbsp;
+      <a href='http://{{baseurl}}/shortener/{{object.shortcode}}'>{{object.url}}/{{ object.shortcode}}</a><br>
+      <br>
+      count: {{object.count}}
+      <br>
+      <a href="/home">Try_again</a>
+    </li>
+   
+    
+</ul>
+
+  </div>
+  </body>
+</html>

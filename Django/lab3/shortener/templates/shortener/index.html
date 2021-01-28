@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{{title}}</title>
+    <style>
+
+    .hero {
+      width: 800px;
+      margin: 0 auto;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="hero">
+    <h1>Url Shortener</h1>
+    <form method='POST' action=".">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <input type="submit" value="Shorten">
+    </form>
+    {% for url in retrieve_url %}
+    <ul>
+      <li>
+        {{url}}&nbsp;
+        <a href='http://{{baseurl}}/shortener/{{url.shortcode}}'>{{url.shortcode}}</a><br>
+      </li>
+    </ul>
+    {%endfor%}
+  </div>
+  </body>
+</html>
