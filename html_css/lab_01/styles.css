@@ -1,0 +1,33 @@
+/*
+Author: Mohammad Fawad, Mohammadi
+Project: styles.css
+Date: 04/26/2019
+*/
+body {
+    background-color: aliceblue;
+    color: black;
+    font-family: "Times New Roman", Times, serif;
+    font-size: large;
+}
+h1 {
+    background-color: #000332;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 250%;
+    margin-bottom: 0;
+}
+h2 {
+    color: #00539C;
+    font-family: Georgia, serif;
+}
+.family {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #000000;
+    font-style: italic;
+}
+#wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%
+}
