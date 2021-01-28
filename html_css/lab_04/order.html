@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Order Burrito</title>
+</head>
+<body id="orderhero">
+    <div class="wrapper">
+    <header class="hero1">
+        <h2>El pacho Burrito</h2>
+        
+    </header>
+    <nav class="navhero">
+        <ul class="ulhero">
+            <li class="lihero"><a class="ahero" href="burrito.html">Home</a></li>
+            <li class="lihero"><a class="ahero" href="order.html">Order-Form</a></li>
+            <li class="lihero"><a class="ahero" href="user.html">User-Informaiton</a></li>
+        </ul>
+    </nav>
+    <main>
+       
+        <h2>Make your Own Burrito</h2>
+        <form method="post" action="https://webhook.site/cc8f59fb-0ede-4ecb-bbfb-60fed3f657e1">
+        <fieldset>Tortilla: <input type="radio" name="Tortilla" value="Whiteflour"> White flour
+                            <input type="radio" name="Tortilla" value="Wheatflour"> Wheat Flour
+                            <input type="radio" name="Tortilla" value="Spinach"> Spinach
+                            <input type="radio" name="Tortilla" value="Corn"> Corn
+                            </fieldset><br>
+        <fieldset>Rice: <input type="radio" name="Rice" value="WhiteRice"> White Rice
+                            <input type="radio" name="Rice" value="BrownRice"> Brown Rice
+                            </fieldset><br>
+        
+        Meat: <br><input type="checkbox" name="Meat" value="Chicken"> Chicken
+            <input type="checkbox" name="Meat" value="Carnitas"> Carnitas
+            <input type="checkbox" name="Meat" value="Beef"> Beef
+            <input type="checkbox" name="Meat" value="None"> None
+        <br><br>
+        Beans: <br><input type="checkbox" name="Beans" value="BlackBeans"> Black Beans<br>
+            <input type="checkbox" name="Beans" value="PintoBeans"> Pinto Beans
+            <br><br>
+        Additional Ingredients:
+        <select name="Additional">
+            <option value="cheese">cheese</option>
+            <option value="Sourcream">Sour Cream</option>
+        </select><br>
+        <p>Comments:</p>
+        <textarea name="myComments" id="myComments" rows="4" cols="30" placeholder="Comments"></textarea>
+        
+            <button type="submit">Submit</button>
+        
+        
+        
+      
+        </form>
+    </main>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
