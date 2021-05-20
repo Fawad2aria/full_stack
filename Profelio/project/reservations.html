@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--
+Assignment Name: Final Project
+File Name: reservations.html
+Date: 05/28/19 
+Programmer: Mohammad Fawad Mohammadi
+-->
+
+<html lang="en">
+<head>
+    <title>Project Update 5</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/portland_tours.css" rel="stylesheet">
+</head>
+<body>
+<div id="wrapper">
+<h1>Reservations</h1>
+    <a id="top"></a>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tours.html">Tours</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+</nav>
+    <aside>
+        <ul>
+            <li><img src="images/downtown_tour.png" width="200" height="140" alt="downtown tour"></li>
+            <li><img src="images/landmarks_tour.png" width="200" height="140" alt="landmark tour"></li>
+            <li><img src="images/albina_tour.png" width="200" height="140" alt="albina tour"></li>        
+        </ul>
+<div class="address1"><p><b><em>Company Address:</em></b><br>
+Portland Historical Tours<br>
+1200 NW Naito Parkway<br>
+Portland, OR 97209<br>
+Tel: (503) 841-0978
+</p>
+        </div>
+      
+</aside>
+<main>
+<h2>Book a Tour</h2> 
+<p>Required information marked with an asterisk (*)</p>
+<form method="post" action="https://webdevbasics.net/scripts/demo.php">
+    <label>Select your tour:</label>
+        <select name="inquiry" id="inquiry" size="1">
+            <option value="downtown_tour">Downtown Tour</option>
+            <option value="landmarks_tour">Landmarks Tour</option>
+            <option value="albina_tour">Albina Tour</option>
+        </select><br>
+    <br>
+    <label for="myFName">* First Name:</label> 
+        <input type="text" name="myFName" id="myFName" required="required" placeholder="your first name">
+    <label for="myLName">* Last Name:</label>
+        <input type="text" name="myLName" id="myLName" required="required" placeholder="your last name">
+    <label for="myEmail">* E-mail:</label>
+        <input type="email" name="myEmail" id="myEmail" required="required" placeholder="your email address">
+    <label for="myPhone">Phone:</label>
+        <input type="tel" name="myPhone" id="myPhone">
+    <label for="myDate">Tour Date:</label>
+        <input type="date" name="myDate" id="myDate">
+     <label for="myparticipants">Total Participants:</label>
+    <input type="number" name="myparticipants" id="myparticipants" min="1" max="14">
+    <label>Does anyone in your party have food or<br> drink<br> sensitivities?</label>
+        <input type="radio" name="yes_no" value="yes"> Yes<br>
+    <input type="radio" name="yes_no" value="no">No<br>
+    <br>
+    <label for="myComments">If so, what are they?</label>
+    <textarea name="myComments" id="myComments" rows="2" cols="20"></textarea>
+    <input id="mySubmit" type="Submit" value="Submit">
+    </form>
+    
+ <div class="address"><b><em>Company Address:</em></b><br>
+Portland Historical Tours<br>
+1200 NW Naito Parkway<br>
+Portland, OR 97209<br>
+phone number:<a class="mobile" href="tel:503-841-0978">(503) 841-0978</a>
+<span class="desktop">(503) 841-0978</span>
+    </div>
+</main>
+<footer>
+    Copyright &copy; 2019 Portland Historical Tours<br>
+    <a href="mailto:mohammadfawad.mohammadi@pcc.edu">mohammadfawad.mohammadi@pcc.edu</a>
+    </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,129 @@
+/*
+Assignment Name: Final Project
+File Name: template-responsive.css
+Date: 05/14/2019
+Programmer: Mohammad Fawad, Mohammadi
+*/
+body {
+    color: #333333;
+    font-family: Verdana, Arial, sans-serif;
+    background-color: #ffffff;
+}
+h1 {
+    background-color: #92B558;
+    color: #FFFFFF;
+    background-image: url(../images/logo.png);
+    background-position: 10px;
+    background-repeat: no-repeat;
+    background-size: 100px;
+    text-align: center;
+    line-height: 300%;
+    padding: 10px 10px 10px;
+}
+h2 { color: #3399CC; 
+    padding-left: 5px;}
+
+nav { float: left;
+      width: 160px;
+      font-weight: bold;
+      color: #00303F;
+      
+    }
+nav ul {
+    margin-top: 20px;
+    list-style-type: none;
+    padding-left: 20px;
+}
+nav a {
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+nav a:link { color: #330000; }
+nav a:visited { color: #0000ff; }
+nav a:hover { color: #60A917; text-decoration-line: underline;}
+main {
+    margin: 0 0 0 160px;
+    padding: 10px 30px 20px 10px;
+
+}
+p { padding-right: 20px; padding-left: 5px; }
+#wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    background-color: #CAE4DB;
+}
+.down {
+    text-align: center;
+    width: 60%;
+	height: 300px;
+	background-color: #D1ECFF;
+	padding: 20px; margin: 10px; border: 1px solid #000033;
+    padding-top: 20px;
+     }
+aside { float: right; 
+        width: auto;
+    padding-right: 20px;
+    padding-left: 20px;
+            }
+aside li { 
+                 padding: 20px;
+               
+                 margin-bottom: 10px; border: 1px solid #000033;
+                 background-color: #D1ECFF;
+                 width: 75%;
+                 height: 100px;
+                 }
+aside ul { list-style-type: none;
+            padding-right: 10px;
+}
+aside p { padding-left: 30px;}
+footer {
+    background-color: #333333;
+    color: #FFFFFF;
+    font-size: .6em;
+    font-style: italic;
+    text-align: center;
+    padding: 1em;
+}
+footer a {
+    color: #2EE600;
+    clear: both;
+}
+.address { display: none; }
+.address1 { display: inline;
+         }
+.addr { font-weight: bold;
+        color: #000fff; }
+@media only screen and (max-width: 1024px) {
+     body { margin: 0; }
+    #wrapper { width: auto; }
+    .down { width: auto; }
+    main { margin-left: 0; padding-left: 1em; padding-top: 0; font-size: 90%; }
+    aside { display: none; }
+   nav { float: none; width: auto; padding-top: 0.01em; padding-bottom: 0.01em; padding-left: 1em; padding-right: 1em; }
+    nav a { padding-right: 2em; }
+    nav li { display: inline-block; padding: 0.5em; }
+    nav ul { text-align: center; }
+    p { font-size: 90%; }
+    .address { display: inline; }
+    .desktop { display: inline; }
+    .mobile { display: none; }
+
+}
+
+@media only all and (max-width: 768px) {
+    h1 { height: 100%; font-size: 1.5em; text-align: right; padding-right: 1em; 
+    margin-bottom: 0; } 
+    nav { padding: 0;  }
+    nav a { display: block; padding: 0.2em; font-size: 1.1em; border-bottom: 1px groove #000000; margin-top: 0; margin-bottom: 0; }
+    .down { display: none; }
+    nav ul { margin: 0; padding: 0; }
+    nav li { display: block; margin: 0; padding: 0; }
+    main { padding-top: 0.1em; padding-right: 0.6em; padding-bottom: 1em; padding-left: 0.4em; }
+    footer { padding-top: 1.5em; padding-bottom: 1.5em; }
+    .mobile { display: inline; padding-bottom: 1em; }
+    .desktop { display: none; }
+    .address { padding-bottom: 1em; }
+}

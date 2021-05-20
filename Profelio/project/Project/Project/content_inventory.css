@@ -1,0 +1,28 @@
+/*
+Assignment Name: Content Inventory  
+File Name: pacific.css
+Date: 23/04/2019
+Programmer: Mohammad Fawad, Mohammadi
+*/
+body {
+    background-color: aliceblue;
+    color: black;
+    font-family: "Times New Roman", Times, serif;
+}
+h1 {
+    background-color: #000033;
+    color: white;
+    text-align: center;
+}
+h2 {
+    color: #00539C;
+}
+dt {
+    color: #006E6D;
+    font-weight: bold;
+}
+#wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%
+}
