@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Todo List</title>
+    <!-- Add your styles here! -->
+    <link rel="stylesheet" href="/css/site.css" />
+</head>
+<body>
+    <div id="todo-list-example">
+        <form v-on:submit.prevent="addNewTodo">
+          <label for="new-todo">Add a todo</label>
+          <input
+            v-model="newTodoText"
+            id="new-todo"
+            placeholder="E.g. Feed the cat"
+          />
+          <button>Add</button>
+        </form>
+        <ul>
+          <todo-item
+            v-for="(todo, index) in todos"
+            :key="todo.id"
+            :title="todo.title"
+            @remove="todos.splice(index, 1)"
+          ></todo-item>
+        </ul>
+      </div>
+      
+    <!-- <ol id="app">
+        <li v-for="todo in todos"> {{todo.text}} </li>
+    </ol>
+    <button v-on:click="completed">Revers</button>
+     -->
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <!-- Include your code here... -->
+    <script type="text/javascript" src='site.js'></script>
+</body>
+</html>

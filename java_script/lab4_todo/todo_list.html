@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+ul li {
+  padding-left: 1em;
+  list-style-type: none;
+  margin: 1em;
+  font-size: 1.80em;
+  text-decoration: line-through;
+}
+
+
+body {
+    background-color: aliceblue;
+    color: black;
+    font-family: "Times New Roman", Times, serif;
+    font-size: large;
+}
+
+h2 {
+    color: #00539C;
+    font-family: Georgia, serif;
+}
+.family {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #000000;
+    font-style: italic;
+}
+/* #wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%
+} */
+
+</style>
+
+</head>
+<body>
+    <div id='wrapper'>
+    <h1>To Do List</h1>
+  
+    <ul>
+        <li>
+            <input type="text" id='myinput'>
+            <button id="submit">add</button>
+        </li>
+    </ul>
+
+
+    <hr>
+    <h2>Completed Section</h2>
+    <ul id='mycompleted'>
+    </ul>
+    <hr>
+    <h2>Uncompleted Section</h2>
+    <script src="todo_list.js"></script>
+</div>
+</body>
+</html>

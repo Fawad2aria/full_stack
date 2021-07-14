@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #myAny_api {
+        /* height: 710px; */
+        
+        width: 24%;
+        }
+    Button {
+        margin-left: 95px;
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        padding: 5px 10px;
+        cursor: pointer;
+        margin-top: 0px;
+
+    }
+    #myhero {
+        margin-left: 30px;
+        margin: 5px;
+    }
+    input {
+        width: 70px;
+        margin-left: 10px;
+    }
+    select {
+        margin-left: 50px;
+    }
+    
+</style>
+<body>
+    <h1>Specify Output currencies</h1>
+    <div id='myAny_api'>
+    <span>Amount: <input type="number" v-model="amount" id="myhero"></span>
+        <br>
+        <span>Soure: &nbsp;&nbsp;&nbsp;&nbsp;<select v-model="source" id="myhero">
+            <option disabled value="">source</option>
+            <option>USD</option>
+            <option></option>
+          </select> </span>
+        </span>
+        <br>
+    <span>Currencies:<select v-model="currencies" id="myhero">
+        <option disabled value="">Currencies</option>
+        <option>EUR</option>
+        <option></option>
+      </select> </span>
+    <br>
+        <button v-on:click="get_anyApi(), mulitiply()">Convert</button>
+        <hr>
+        <span>Full List of Supported Currencies:&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="currencies.html">Currencies</a></span>
+        <br>
+        <br>
+
+        <div>
+            <span>Source: {{results ? results.source: ''}}</span>
+            <br>
+            <span>Rates: {{results ? results.quotes : ''}}</span>
+            <hr>
+            <span>
+                Result: {{result}}
+            </span>
+        </div>
+
+
+    </div>
+    
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
